@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #191654, #43C6AC);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.main {
+    height: 60vh;
+    width: 48vw;
+    background: white;
+    margin-top: 10%;
+    margin-left: 25%;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+}
+
+.label {
+    padding-left: 43%;
+}
+
+.label2 {
+    padding-left: 40%;
+}
+
+.fname {
+    margin-top: 8px;
+    height: 6vh;
+    width: 25vw;
+    margin-left: 20%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+.msg {
+    margin-top: 8px;
+    height: 6vh;
+    width: 25vw;
+    margin-left: 20%;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+button{
+    background: linear-gradient(to right, #191654, #43C6AC);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin-left: 40%;
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 10px 30px 10px 30px;
+}
+
+#result{
+    margin-left: 30%;
+    margin-top: 20px; 
+}

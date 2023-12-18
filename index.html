@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Input Value</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>Mini Task - Set input value</h1>
+        <label for="task" class="label">Name</label><br>
+        <input type="text" id="fname" class="fname"><br>
+
+        <label for="task" class="label2">Enter a message</label><br>
+        <input type="text" id="msg" class="msg"><br>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+      function submitForm(){
+        const nameInput = document.getElementById("fname");
+        const messageInput = document.getElementById("msg");
+        const outputMessageDiv = document.getElementById("result");
+
+        const nameValue = nameInput.value.trim();
+        const messageValue = messageInput.value.trim();
+
+        if (nameValue !== '' && messageValue !== '') {
+                
+                const newParagraph = document.createElement('p');
+
+                newParagraph.textContent = `${nameValue}: Message ${messageValue}`;
+
+                outputMessageDiv.appendChild(newParagraph);
+
+                nameInput.value = '';
+                messageInput.value = '';
+            } else {
+                alert('Please fill in both fields.');
+            }
+      }
+    </script>
+</body>
+
+</html>
